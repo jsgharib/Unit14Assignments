@@ -3,21 +3,35 @@ package MatrixCount;
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
-
 import java.util.*;
-import java.io.*; 
+import java.io.*;
 
-public class MatrixCount1
-{
-    private static int[][] m = {{ 1, 2, 3, 4, 5},
-    										{ 6, 7, 8, 9, 0},
-    										{ 6, 7, 1, 2, 5},
-    										{ 6, 7, 8, 9, 0},
-    										{ 5, 4, 3, 2, 1}};
+public class MatrixCount1 {
 
-    public static int count( int val  )
-    {
-		//add code
-		return 0;
+    private static int[][] m = {{1, 2, 3, 4, 5},
+                                           {6, 7, 8, 9, 0},
+                                           {6, 7, 1, 2, 5},
+                                           {6, 7, 8, 9, 0},
+                                           {5, 4, 3, 2, 1}};
+    public static void printMat(){
+        for(int k = 0; k < m.length; k++){
+            System.out.print("{");
+            for(int l = 0; l < m[k].length-1; l++){
+                System.out.print(m[k][l] + " ");
+            }
+            System.out.print(m[k][m[k].length-1] + "}");
+            System.out.print("\n");
+        }
+    }
+    public static int count(int val) {
+        int count = 0;
+        for(int i = 0; i < m.length; i++){
+            for(int j = 0; j < m[i].length; j++){
+                if(m[i][j] == val){
+                    count++;
+                }
+            }
+        }
+        return count;
     }
 }

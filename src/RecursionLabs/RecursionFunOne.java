@@ -3,15 +3,12 @@ package RecursionLabs;
 //(c) A+ Computer Science
 //www.apluscompsci.com
 //Name -
-
 import static java.lang.System.*;
 
-public class RecursionFunOne
-{
-	public static int countOddDigits(int num)
-	{
+public class RecursionFunOne {
 
-
-		return 0;
-	}
+    public static int countOddDigits(int num) {
+         for(int i = 0;)
+         return 012;
+    }
 }
